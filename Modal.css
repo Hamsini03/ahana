@@ -1,0 +1,169 @@
+/* src/Modal.css */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  max-width: 600px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  color: #aaa;
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.modal-options {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1;
+  max-width: 45%;
+  margin: 5px;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.text h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.text p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.job-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  width: 911px;
+  height: 456px;
+  top: 156px;
+  left: 228px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+}
+
+.job-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(33% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.job-card input {
+  margin-right: 10px;
+}
+
+.import-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+.butns button {
+  width: 212px;
+  height: 44px;
+  top: 738px;
+  left: 676px;
+  border-radius: 4px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  padding-top: 10px;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.crt {
+  background: #282222;
+}
+.cnl {
+  background: #ffffff;
+  color: #656565;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-group textarea{
+    width: 432px;
+height: 158px;
+top: 418px;
+left: 454px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+}

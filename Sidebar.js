@@ -1,40 +1,31 @@
+// src/components/Sidebar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTachometerAlt, faClipboard, faBuilding, faUserFriends } from '@fortawesome/free-solid-svg-icons';
 import './Sidebar.css';
+import logo from '../assets/logo.png';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay';
+import GroupIcon from '@mui/icons-material/Group';
 
-const Sidebar = () => {
+
+
+
+
+function Sidebar() {
   return (
     <div className="sidebar">
-      <img src='images.png' alt='logo'/>
+      <div className="logo">
+      <img src={logo} alt="Logo" />
+      </div>
       <nav>
         <ul>
-          <li>
-            <Link to="/">
-              <FontAwesomeIcon icon={faTachometerAlt} /> Dashboard
-            </Link>
-          </li>
-          <li>
-            <Link to="/post-job">
-              <FontAwesomeIcon icon={faClipboard} /> Post a Job
-            </Link>
-          </li>
-          <li>
-            <Link to="/vendor-details">
-              <FontAwesomeIcon icon={faBuilding} /> Vendor details
-            </Link>
-          </li>
-          <li>
-            <Link to="/candidate-list">
-              <FontAwesomeIcon icon={faUserFriends} /> Candidate list
-            </Link>
-          </li>
+          <li><Link to="/">   <DashboardIcon/>  Dashboard</Link></li>
+          <li><Link to="/job-request"> < CalendarViewDayIcon/> Request</Link></li>
+          <li><Link to="/candidates">  <GroupIcon/>      Candidates</Link></li>
         </ul>
       </nav>
     </div>
   );
-};
+}
 
 export default Sidebar;
-

@@ -1,47 +1,45 @@
 /* src/components/Sidebar.css */
 .sidebar {
-  width: 250px;
-  background-color:white;
-  padding: 20px;
-  height: 100vh;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  display: flex;
-  padding: 10px;
-  font-size: 16px;
-  color: #02111f;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-decoration: none;
-}
-
-.sidebar ul li.active,
-.sidebar ul li:hover {
-  background: #e6e6f5;
-  color: slateblue;
-  text-decoration: none;
-  list-style: none;
-}
-
-.sidebar ul li svg {
-  margin-right: 20px;
-  align-items: center;
-  padding: 10px;
-}
-.sidebar img {
-  margin-left: -5px;
-  margin-right: 5px;
-}
-.sidebar a {
-  text-decoration: none;
-  color: inherit; /* Keep the text color inherited from the parent */
-}
-
+    width: 200px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    width: 226px;
+    height: 1033px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .logo img {
+    max-height: 100%; /* Adjust as needed */
+    max-width: 100%; /* Adjust as needed */
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 30px 0;
+    
+  }
+  
+  nav ul li a {
+    font-family: Roboto;
+font-size: 20px;
+font-weight: 500;
+line-height: 20px;
+text-align: center;
+    color: #333;
+  }
+  
+  
+  
